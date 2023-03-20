@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Lucida Sans' ;
+        }
+ 
+
+        nav{
+            display: flex;           
+            align-items: center;
+            justify-content: space-between;
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+
+        ul{
+            display: flex;
+            list-style-type: none;
+            
+        }
+
+
+        ul>li, .account {
+            font-size: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+       
+            cursor: pointer;
+        }
+        ul>li>a{
+            color: #BBBAB8;
+            text-decoration: none;
+        }
+        
+
+
+
+        ul>li>a:hover{
+        border-bottom:3px solid #5C4FC3;
+        
+        cursor: pointer;
+        }
+
+
+ 
+
+        main{
+            display: flex;
+            justify-content: space-between;
+            align-items:flex-start;
+            margin-top: 40px;
+        }
+
+       .leftside{
+            font-size: 32px;
+            margin: 100px 0px 0px 120px;
+            font-family:'Noto Sans';
+          
+        }
+        p{
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .Dmm_design, .Blur_animation , .Illustration , .Refunds{
+            display: flex;
+            font-size: 20px;
+            justify-content: space-between;
+            align-items: center;
+            width: 340px;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 20px 0px;
+            background-color: #F8F8F8;
+        
+
+        }
+
+        .Dmm_design:hover, .Blur_animation:hover , .Illustration:hover , .Refunds:hover{
+background-color: #fff;
+box-shadow: 3px 3px #E6E6E6;
+cursor: pointer;
+        }
+        .shape{
+        
+            width: 20px;
+            height: 10px;
+            border-radius: 20px;
+        }
+        .Dmm_design >.shape{
+            background-color: #FED7DA ; 
+        }
+
+        .Blur_animation > .shape{
+            background-color: #FD6534;
+        }
+        .Illustration > .shape{
+            background-color:#9ED095;
+        }
+         .Refunds > .shape{
+             background-color:#FFE4A0 ;
+         }
+
+        .account{
+            width: 120px;
+            height: 50px;
+            background-color: #FFD8DB;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;      
+            font-weight: 600;     
+            color: #A389CC;
+            font-size: 16px;
+         
+        }
+        .btns{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            margin-top: 32px;
+         
+        }
+
+        .button{
+            width: 130px;
+            height: 50px;
+            background-color: #5243C0;
+            color: #fff;
+            font-size: 14px;
+            border-radius: 20px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;      
+            margin-right: 40px;     
+            font-family: 'Lucida Sans' ;
+            cursor: pointer;
+
+        }
+
+        .container{
+            margin-top: 30px;
+        }
+
+        .btns >img{
+            margin-left: 20px;
+        }
+
+        .card_text{
+            width: 150px;
+        }
+        .fa-solid, .fas{
+            color: #EDEDED  
+        }
+        .fa-solid:hover, .fas:hover{
+        color: #5243C0;  
+        cursor: pointer;
+       }
+
+       .date{
+           color: #D4D4D3;
+       }
+
+    
+    </style>
+    <title>Stunning website</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="stunning-logo.png" alt="logo" width="100px" height="40px"/></div>
+            <ul class="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Jobs</a></li>                
+            </ul>
+            <div class="account">Your Account</div>
+        </nav>
+    </header>
+    <main>
+        <div class="leftside">
+            <h1>Stunning
+            <br/> 
+            Workplace</h1> 
+            <p>With a Stunning, remote teams can organise projects, manage shifting priorities, get work done.</p>
+
+            <div class="btns">
+             <div class="button">New Account</div>
+             <img src="./arrow-down.png">
+           </div>
+
+           <div class="container">
+           <div class="Dmm_design">
+            <i class="fa-solid fa-circle-check"></i><span class="card_text"> Dmm design  </span><img src="./user-pink.png"/><span class="date">20 Dec</span> <span class="shape"></span> 
+            </div>  
+            <div class="Blur_animation">
+                <i class="fa-solid fa-circle-check" id="selected_icon"></i><span class="card_text"> Blur animation  </span><img src="./user-orange.png"/><span class="date">22 Dec</span> <span class="shape"></span> 
+                </div>  
+                <div class="Illustration">
+                    <i class="fa-solid fa-circle-check"></i><span class="card_text"> Illustration  </span><img src="./user-blue.png"/><span class="date">26 Dec</span> <span class="shape"></span> 
+                    </div>  
+                    <div class="Refunds">
+                        <i class="fa-solid fa-circle-check"></i><span class="card_text"> Refunds  </span><img src="./user-red.png"/><span class="date">28 Dec</span> <span class="shape"></span> 
+                        </div>  
+               
+             </div>
+        </div>
+        <div class="rightside">
+            <img src="landing-section-image.png" alt="stunning_image"/>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/d9aeacf7b5.js" crossorigin="anonymous"></script>
+</body>
+</html>
